@@ -183,12 +183,12 @@ input[type=submit]:focus {
 
     input[type=text], input[type=email] {
         width: 90vw;
-        margin: 0 0 2.5vh 0;
+        margin: 0 0 10px 0;
     }
 
     input[type=submit] {
         width: 90vw;
-        margin: 0 0 2.5vh 0;
+        margin: 0 0 10px 0;
     }
 }
 
