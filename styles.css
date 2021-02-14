@@ -67,7 +67,7 @@ input[type=text], input[type=email] {
     color: var(--white);
     border: 2px solid #262626;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.2s;
     outline: none;
     font-size: 16px;
     font-weight: bold;
@@ -78,7 +78,7 @@ input[type=text]:hover, input[type=email]:hover {
 }
 
 input[type=text]:focus, input[type=email]:focus {
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary) !important;
 }
 
 input[type=submit] {
@@ -93,7 +93,7 @@ input[type=submit] {
     font-weight: bold;
     font-size: 16px;
     outline: none;
-    transition: 0.5s;
+    transition: 0.2s;
     margin-bottom: 2.5vh;
 }
 
@@ -126,7 +126,7 @@ input[type=submit]:focus {
     background-color: #161616;
     border: 2px solid #262626;
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.2s;
     outline: none;
 }
 
@@ -136,7 +136,7 @@ input[type=submit]:focus {
 
 .checkboxContainer input:checked ~ .checkmark {
     background-color: var(--primary);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary) !important;
 }
 
 .checkmark:after {
