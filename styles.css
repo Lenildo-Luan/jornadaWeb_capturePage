@@ -163,6 +163,13 @@ input[type=submit]:focus {
     display: none;
 }
 
+.inputLabel {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
 /* Responsive styles */
 @media (max-width: 990px) {
     .container {
