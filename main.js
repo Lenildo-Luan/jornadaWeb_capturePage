@@ -29,7 +29,7 @@ mainForm.addEventListener('submit', function(element){
         mainForm.checkboxSpan.style.borderColor = '#262626';
         fetch(requestUrl, {
             method: 'post',                                              
-            body: 'requestBody',
+            body: JSON.stringify(requestBody),
         }).then(response => {
             console.log(response);
         }).catch(err => {
