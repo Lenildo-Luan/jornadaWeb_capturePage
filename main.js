@@ -27,13 +27,13 @@ mainForm.addEventListener('submit', function(element){
         mainForm.checkboxSpan.style.borderColor = '#D50000';
     } else {
         mainForm.checkboxSpan.style.borderColor = '#262626';
-        // fetch(requestUrl, {
-        //     method: 'post',                                              
-        //     body: 'requestBody',
-        // }).then(response => {
-        //     console.log(response);
-        // }).catch(err => {
-        //     console.log(err);
-        // })
+        fetch(requestUrl, {
+            method: 'post',                                              
+            body: 'requestBody',
+        }).then(response => {
+            console.log(response);
+        }).catch(err => {
+            console.log(err);
+        })
     }
 })
