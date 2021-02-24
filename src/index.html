@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Standard favicon -->
+    <link href="./assets/favicon/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- Recommended favicon format -->
+    <link href="./assets/favicon/favicon-16x16.png" rel="icon" type="image/png">
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link href="./assets/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- To run web application in full-screen -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>Aula ao vivo! | Lenildo Luan</title>
+    <meta content="Quer aprender mais sobre os fundamentos do desenvolvimento web? Toda quinta a noite, às 20h, Lenildo Luan desenvolve um projeto do zero com você!" name="description">
+    <!--build:css css/styles.min.css-->
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <!--endbuild-->
+    <link rel="preload" as="font" href="./assets/fonts/Barlow-Thin.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./assets/fonts/Barlow-Bold.woff" type="font/woff" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <img alt="Lenildo Luan" class="mainImg" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/mainImg_TbFnDsXwe.webp">
+        <main>
+            <h1 class="title">Aula ao vivo<br class="verySmallScreenBreaker"> de dev web</h1>
+            <p class="text">Vamos fazer, toda quinta, às 20h, um projeto juntos e aprender mais<br class="verySmallScreenBreaker"> sobre os fundamentos do desenvolvimento web, online e de graça?</p>
+            <form id="mainForm" name="mainForm">
+                <input id="formName" placeholder="Seu nome" type="text"> <label class="inputLabel" for="formName">Seu nome</label><br class="smallScreenBreaker">
+                <input id="formEmail" placeholder="Seu email principal" type="email"> <label class="inputLabel" for="formEmail">Seu email principal</label><br>
+                <input type="submit" value="QUERO PARTICIPAR"><br>
+                <label class="checkboxContainer text">Ao participar concordo em receber comunicações <input id="checkbox" type="checkbox"> <span class="checkmark" id="checkboxSpan"></span></label>
+            </form>
+        </main>
+    </div>
+
+    <!--build:js js/main.min.js -->
+    <script src="./scripts/main.js">
+    </script>
+    <!-- endbuild -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6CJDKLESP">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W6CJDKLESP');
+    </script>
+
+</body>
+
+</html>
