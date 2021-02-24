@@ -31,7 +31,7 @@ mainForm.addEventListener('submit', function(element){
             method: 'post',                                              
             body: JSON.stringify(requestBody),
         }).then(response => {
-            location.href='./obrigado.html';
+            location.href='../pages/obrigado.html';
         }).catch(err => {
             console.log(err);
         })
