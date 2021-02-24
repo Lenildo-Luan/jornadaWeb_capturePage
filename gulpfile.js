@@ -12,6 +12,7 @@ const htmlmin = require('gulp-htmlmin');
 
 const config = {
     baseDir: 'src',
+    destDit: 'public',
     htmlDir: 'src/**/*.html',
     cssDir: 'src/styles/**/*.css',
     jsDir: 'src/scripts/**/*.js'
@@ -36,7 +37,7 @@ gulp.task('js:build', () => {
     return gulp.src('src/**/*.html')
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest(config.destDit))
 });
 
 gulp.task('css:build', () => {
@@ -44,20 +45,20 @@ gulp.task('css:build', () => {
         .pipe(useref())
         .pipe(gulpIf('*.css', autoprefixer()))
         .pipe(gulpIf('*.css', cssnano()))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest(config.destDit))
 });
 
 gulp.task('images:build', () => {
     return gulp.src('src/assets/**/*.+(png|jpg|gif|svg)')
         .pipe(cache(imagemin()))
-        .pipe(gulp.dest('dist/assets'))
+        .pipe(gulp.dest(config.destDit + '/assets'))
 });
 
 gulp.task('clean:dist', () => {
-    return del.sync('dist');
+    return del.sync(config.destDit);
 })
 
-gulp.task('cache: clear', () => {
+gulp.task('cache:clear', () => {
     return cache.clearAll()
 })
 
@@ -68,5 +69,5 @@ gulp.task('build', () => {
         .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', autoprefixer()))
         .pipe(gulpIf('*.css', cssnano()))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest(config.destDit))
 });
