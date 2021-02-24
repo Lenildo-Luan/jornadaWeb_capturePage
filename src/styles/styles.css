@@ -1,6 +1,5 @@
-@import url('./reset.css');
-
 /* Variables */
+
 :root {
     --primary: #fe6e00;
     --primary-light: #ff9a42;
@@ -8,16 +7,20 @@
     --white: #ffffff;
 }
 
+
 /* Global styles */
+
 * {
     font-family: 'Barlow', sans-serif;
 }
 
-body { 
+body {
     background-color: #060606;
 }
 
+
 /* Text styles */
+
 .title {
     color: var(--primary);
     font-size: 81px;
@@ -31,9 +34,12 @@ body {
     font-size: 16px;
     font-weight: 100;
     line-height: 22px;
+    margin-bottom: 30px;
 }
 
+
 /* Main styles */
+
 .container {
     box-sizing: border-box;
     overflow: hidden;
@@ -53,12 +59,15 @@ body {
     z-index: -1;
 }
 
+
 /* Form styles */
+
 form {
     margin-top: 5vh;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     box-sizing: border-box;
     padding: 12px 20px;
     width: 270px;
@@ -73,18 +82,23 @@ input[type=text], input[type=email] {
     outline: none;
     font-size: 16px;
     font-weight: bold;
-}   
+}
 
-input[type=text]:hover, input[type=email]:hover {
+input[type=text]:hover,
+input[type=email]:hover {
     border: 2px solid #464646;
 }
 
-input[type=text]:focus, input[type=email]:focus {
+input[type=text]:focus,
+input[type=email]:focus {
     border: 2px solid var(--primary) !important;
 }
 
+
 /* Cor de fundo do autocomplete */
-input[type=text]:-webkit-autofill, input[type=email]:-webkit-autofill {
+
+input[type=text]:-webkit-autofill,
+input[type=email]:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 50px #161616 inset;
     -webkit-text-fill-color: var(--white);
 }
@@ -142,7 +156,7 @@ input[type=submit]:focus {
     border: 2px solid #464646;
 }
 
-.checkboxContainer input:checked ~ .checkmark {
+.checkboxContainer input:checked~.checkmark {
     background-color: var(--primary);
     border: 2px solid var(--primary) !important;
 }
@@ -153,7 +167,7 @@ input[type=submit]:focus {
     display: none;
 }
 
-.checkboxContainer input:checked ~ .checkmark:after {
+.checkboxContainer input:checked~.checkmark:after {
     display: block;
 }
 
@@ -167,7 +181,7 @@ input[type=submit]:focus {
     transform: rotate(45deg);
 }
 
-.smallScreenBreaker { 
+.smallScreenBreaker {
     display: none;
 }
 
@@ -178,29 +192,27 @@ input[type=submit]:focus {
     overflow: hidden;
 }
 
+
 /* Responsive styles */
+
 @media (max-width: 990px) {
     .container {
-        padding: 0 5vw 0 5vw; 
+        padding: 0 5vw 0 5vw;
     }
-
-    .smallScreenBreaker { 
+    .smallScreenBreaker {
         display: block;
     }
-
     .mainImg {
         display: none;
     }
-
     form {
         width: auto;
     }
-
-    input[type=text], input[type=email] {
+    input[type=text],
+    input[type=email] {
         width: 90vw;
         margin: 0 0 10px 0;
     }
-
     input[type=submit] {
         width: 90vw;
         margin: 0 0 10px 0;
