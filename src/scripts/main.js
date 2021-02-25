@@ -17,6 +17,7 @@ mainForm.addEventListener('submit', function(element) {
         api_key: 'iE5kRmVMSkzt2K9H4_FAnA',
         first_name: mainForm.nameInput.value,
         email: mainForm.emailInput.value,
+        tags: ['2212726']
     }
 
     element.preventDefault();
