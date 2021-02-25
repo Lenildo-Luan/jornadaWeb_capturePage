@@ -10,6 +10,9 @@ mainForm.addEventListener('submit', function(element) {
         checkbox: document.getElementById('checkbox'),
         checkboxSpan: document.getElementById('checkboxSpan'),
     }
+    const requestHeader = new Headers({
+        "Content-Type": "application/json",
+    })
     const requestBody = {
         api_key: 'iE5kRmVMSkzt2K9H4_FAnA',
         first_name: mainForm.nameInput.value,
@@ -30,12 +33,11 @@ mainForm.addEventListener('submit', function(element) {
         mainForm.checkboxSpan.style.borderColor = '#262626';
         fetch(requestUrl, {
             method: 'post',
+            headers: requestHeader,
             body: JSON.stringify(requestBody),
         }).then((response) => {
-            alert(response);
             location.href = './confirmacao.html';
         }).catch(err => {
-            alert(err);
             console.log(err);
         })
     }
