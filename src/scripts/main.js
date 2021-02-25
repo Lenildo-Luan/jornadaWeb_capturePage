@@ -31,9 +31,11 @@ mainForm.addEventListener('submit', function(element) {
         fetch(requestUrl, {
             method: 'post',
             body: JSON.stringify(requestBody),
-        }).then(() => {
+        }).then((response) => {
+            alert(response);
             location.href = './confirmacao.html';
         }).catch(err => {
+            alert(err);
             console.log(err);
         })
     }
