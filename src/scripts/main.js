@@ -3,7 +3,7 @@ const mainForm = document.getElementById('mainForm');
 mainForm.addEventListener('submit', function(element) {
     const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g;
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    const requestUrl = 'https://ml-page-api.herokuapp.com/api/v1/lenildo/users';
+    const requestUrl = 'https://api.convertkit.com/v3/forms/2068822/subscribe/';
     const mainForm = {
         nameInput: document.getElementById('formName'),
         emailInput: document.getElementById('formEmail'),
@@ -11,8 +11,9 @@ mainForm.addEventListener('submit', function(element) {
         checkboxSpan: document.getElementById('checkboxSpan'),
     }
     const requestBody = {
-        name: mainForm.nameInput.value,
-        email: mainForm.emailInput.value,
+        api_key: 'iE5kRmVMSkzt2K9H4_FAnA',
+        first_name: mainForm.nameInput,
+        email: mainForm.emailInput,
     }
 
     element.preventDefault();
@@ -30,8 +31,8 @@ mainForm.addEventListener('submit', function(element) {
         fetch(requestUrl, {
             method: 'post',
             body: JSON.stringify(requestBody),
-        }).then(response => {
-            location.href = './obrigado.html';
+        }).then(() => {
+            location.href = './confirmacao.html';
         }).catch(err => {
             console.log(err);
         })
