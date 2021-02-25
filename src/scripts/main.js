@@ -18,9 +18,9 @@ mainForm.addEventListener('submit', function(element) {
 
     element.preventDefault();
 
-    if (requestBody.name == null || !nameRegex.test(requestBody.name)) {
+    if (mainForm.nameInput == null || !nameRegex.test(mainForm.nameInput)) {
         mainForm.nameInput.style.borderColor = '#D50000';
-    } else if (requestBody.email == null || !emailRegex.test(requestBody.email)) {
+    } else if (mainForm.emailInput == null || !emailRegex.test(mainForm.emailInput)) {
         mainForm.nameInput.style.borderColor = '#262626';
         mainForm.emailInput.style.borderColor = '#D50000';
     } else if (!mainForm.checkbox.checked) {
