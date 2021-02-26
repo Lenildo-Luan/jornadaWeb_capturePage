@@ -55,7 +55,7 @@ body {
     right: 0;
     top: 10;
     position: absolute;
-    width: 50vw;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -101,6 +101,17 @@ input[type=text]:-webkit-autofill,
 input[type=email]:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 50px #161616 inset;
     -webkit-text-fill-color: var(--white);
+}
+
+.smallScreenBreaker {
+    display: none;
+}
+
+.inputLabel {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 input[type=submit] {
@@ -179,17 +190,6 @@ input[type=submit]:focus {
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-}
-
-.smallScreenBreaker {
-    display: none;
-}
-
-.inputLabel {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
 }
 
 
