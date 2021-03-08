@@ -71,3 +71,8 @@ gulp.task('build', () => {
         .pipe(gulpIf('*.css', cssnano()))
         .pipe(gulp.dest(config.destDit))
 });
+
+gulp.task('fonts', function() {
+    return gulp.src('./assets/fonts/**/*')
+        .pipe(gulp.dest(config.destDit + '/assets' + '/fonts'))
+})
