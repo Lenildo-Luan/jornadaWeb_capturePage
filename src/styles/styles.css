@@ -26,7 +26,7 @@ body {
     font-size: clamp(36px, 36px + 1vw, 54px);
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 65px;
+    line-height: (46.8px, 46.8px + 1vw, 64px);
     width: 650px;
     margin: 10px 0;
 }
@@ -44,19 +44,19 @@ body {
 
 .container {
     box-sizing: border-box;
-    overflow: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .bgUniverse {
     right: 0;
     top: 0;
-    opacity: 0.4;
+    opacity: 1;
     position: absolute;
     width: 100vw;
     z-index: -2;
@@ -248,10 +248,26 @@ input[type=submit]:focus {
         width: 90vw;
         margin: 0 0 10px 0;
     }
+    .planet {
+        right: -25%;
+        top: 85%;
+        position: absolute;
+        width: 150vw;
+        z-index: -1;
+    }
 }
 
 @media (max-width: 465px) {
     .verySmallScreenBreaker {
         display: none;
+    }
+    .bgUniverse {
+        right: 0;
+        top: 0;
+        opacity: 1;
+        position: absolute;
+        height: 100vh;
+        width: auto;
+        z-index: -2;
     }
 }
