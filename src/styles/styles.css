@@ -21,10 +21,6 @@ body {
 
 /* Text styles */
 
-.bold {
-    font-weight: 700;
-}
-
 .title {
     color: var(--white);
     font-size: clamp(36px, 36px + 1vw, 54px);
