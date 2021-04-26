@@ -22,9 +22,9 @@ body {
 /* Text styles */
 
 .title {
-    color: var(--white);
+    color: var(--primary);
     font-size: clamp(36px, 36px + 1vw, 54px);
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: (46.8px, 46.8px + 1vw, 64px);
     width: 675px;
