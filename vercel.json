@@ -1,6 +1,6 @@
 {
     "rewrites": [
-        { "source": "/telegram", "destination": "src/telegram.html" },
-        { "source": "/bemVindo", "destination": "src/bemVindo.html" }
+        { "source": "/telegram", "destination": "/src/telegram.html" },
+        { "source": "/bemVindo", "destination": "/src/bemVindo.html" }
     ]
 }
