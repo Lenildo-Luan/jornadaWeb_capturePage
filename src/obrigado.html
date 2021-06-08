@@ -15,14 +15,16 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
-    <title>Muito obrigado! | Lenildo Luan</title>
+    <title>Aula ao vivo! | Lenildo Luan</title>
     <meta content="Quer aprender mais sobre os fundamentos do desenvolvimento web? Toda quinta a noite, às 20h, Lenildo Luan desenvolve um projeto do zero com você!" name="description">
     <!--build:css css/styles.min.css-->
     <link href="./styles/styles.css" rel="stylesheet">
     <link href="./styles/reset.css" rel="stylesheet">
     <!--endbuild-->
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="facebook-domain-verification" content="21kdlqedoansf1af27a3xb2029o0fi" />
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -55,23 +57,45 @@
 </head>
 
 <body>
-
     <div class="container">
-        <img alt="Imagem de background do universo" class="bgUniverse" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/bgUniverse_DkCywBrMKA.webp">
-        <img alt="Imagem ilustrativa de um planeta fictí" class="planet" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/planet_YG5UqB1op.webp">
+        <div class="bgImg"></div>
+        <!-- <img alt="Imagem de background de Lenildo Luan" class="bgImg" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/Grupo_de_máscara_3_q2aErTrHl.png"> -->
         <main>
-            <img alt="Lenildo Luan" class="logo" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/logo_Ujsu0GEom5.webp">
-            <h1 class="title">
-                Obrigado!
-            </h1>
-            <p class="text">
-                Te espero próxima quinta, às 20! Para manter contato direto comigo e ver outros conteúdos, acompanhe meu perfil do instagram.
-            </p>
-            <form id="mainForm" action="https://www.instagram.com/lenildoluan/" target="__blank">
-                <input type="submit" value="PERFIL DO INSTAGRAM">
-            </form>
+            <img alt="Logo" class="logo" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/Grupo_425_vp0F-e49h.png">
+            <img alt="Lenildo Luan" class="typeface" src="https://ik.imagekit.io/zjvju1m8yb/JornadaWeb/LENILDO_LUAN_yNemRMruA.png">
+            <div class="uperLeft corner"></div>
+            <div class="uperRight corner"></div>
+            <div class="downLeft corner"></div>
+            <div class="downRight corner"></div>
+
+            <div class="content">
+                <p class="text">ESTAMOS QUASE LÁ!</p>
+                <h1 class="title">SIGA ESSES DOIS PASSOS PARA FICAR POR DENTRO DE TUDO</h1>
+                <p class="text">Você já está cadastrado nas minhas aulas e já irá receber os emails com os avisos. Mas para garantir que você fique por dentro de tudo que acontece nelas, siga esses dois últimos passos.
+                </p>
+
+                <div class="steppers">
+                    <div class="step">
+                        <p class="subtitle">1. Junte-se ao telegram</p>
+                        <p class="text">
+                            Clique abaixo para receber avisos, atualizações, os materiais usados nas aulas e alguns conteúdos que crio exclusivamente para o Telegram.
+                        </p>
+                        <a id="telegram" class="telegram" href="https://t.me/lenildoluan" target="_blank">Acesse o telegram</a>
+                    </div>
+                    <div class="step">
+                        <p class="subtitle">2. Inscreva-se no YouTube</p>
+                        <p class="text">Inscreva-se no meu canal do YouTube para ter acesso as aulas anteriores e a outros conteúdos que eu crio sobre o universo do desenvolvimento.</p>
+                        <a id="youtube" class="youtube" href="https://www.youtube.com/channel/UCA8uS32JJvwPg_cD2FCHc4w" target="_blank">Inscreva-se no canal</a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
+
+    <!--build:js js/main.min.js -->
+    <script src="./scripts/main.js">
+    </script>
+    <!-- endbuild -->
 
 </body>
 
